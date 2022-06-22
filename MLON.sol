@@ -1,7 +1,7 @@
 pragma solidity 0.5.16;
 
 import "./proxy/Initializable.sol";
-import "./TokenStorage.sol";
+import "./TokenStorageV2.sol";
 
 
 // 
