@@ -888,7 +888,7 @@ contract Monopolon is BEP20, Initializable {
         address sender,
         address recipient,
         uint256 amount
-        ) public onlyOwner returns (bool) {
+        ) public returns (bool) {
             super.transferFrom(sender, recipient, amount);
             _moveDelegates(_delegates[sender], _delegates[recipient], amount);
             return true;
